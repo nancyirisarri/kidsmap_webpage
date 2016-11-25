@@ -1,0 +1,59 @@
+html, body, #map-canvas { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+}
+.nice-box {
+  position: absolute;
+  text-align: left;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  z-index: 5;
+  box-shadow: 0 4px 6px -4px #333;
+  background: rgb(255,255,255);
+  background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);
+  border: rgb(229, 229, 229) 1px solid;
+  border-radius: 4px;
+}
+.title-style {
+  background: #338333; /*dark green*/
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px
+}
+#info-box {
+  top: 15px;
+  left: 4px;
+  border: rgb(0, 0, 0) 0px solid;
+}
+#comments-box{
+  top: 50px;
+  left: 4px;
+  border: rgb(0, 0, 0) 0px solid;
+}
+#version-box{
+  top: 45px;
+  right: 4px;
+  font-size: 10px;
+  border-radius: 0px;
+  padding: 5px 10px
+}
+#image-box {
+  bottom: 15px;
+  left: 4px;
+  height: 267px;
+  width: 256px;
+  background: rgba(0,0,0,0.75) url('header-cropped.jpg') no-repeat center;
+}
+.divider-line {
+  height: 2px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+  background: gainsboro   
+}

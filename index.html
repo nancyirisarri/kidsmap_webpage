@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>KiDS Map</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCu4BSuZyvhRR-HvNKp_YzIYaaUCrZW84c"></script>
+    <script src="mapScript.js"></script>
+    <script src="handlersScript.js"></script>
+    <script src="helperScript.js"></script>    
+    </meta>
+  </head>
+  
+  <body id="map-container">
+
+    <div id="dropdown-box" class="nice-box">
+
+      <div>
+          <div id="tile-variable-text">
+            Select a property to show its values over the tiles.
+          </div>
+    
+          <div id="tile-variable-dropdown">
+            <select id="tile-variable">
+              <option value="clear"></option>
+              <option value="coaddIsValid">Coadd is_valid</option>
+              <option value="coaddImstatMax">Coadd imstat_max</option>
+              <option value="clear">Clear all</option>
+            </select>
+          </div>
+
+      </div>
+      <div id="legend">
+          <div id="data-min">min</div>
+          <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
+          <div id="data-max">max</div>
+      </div>
+
+    </div>
+
+    <div id="info-box" class="nice-box">
+      <div class="title-style">Tile info</div>
+    </div>
+
+    <div id="comments-box" class="nice-box">
+      <div class="title-style">Manage list of tiles</div>
+    </div>
+
+    <div id="map-canvas">
+    </div>
+  
+  </body>
+</html>
